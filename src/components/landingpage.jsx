@@ -133,7 +133,7 @@ const scrollRef = useRef(null);
               <ul>
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Projects</a></li>
-                <li><a href="#">Catalogue</a></li>
+                <li><a href="/catalogue">Catalogue</a></li>
                 <li><a href="#">Appointment</a></li>
               </ul>
             </nav>
