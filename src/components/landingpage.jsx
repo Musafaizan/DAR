@@ -345,7 +345,7 @@ const scrollRef = useRef(null);
               From dimensions to finishes, create furniture that matches your
               exact style and needs. With DAR, you’re not limited to templates.
             </p>
-          </div>
+          </div>  
 
           <div className="card">
             <div className="icon">🚚</div>
