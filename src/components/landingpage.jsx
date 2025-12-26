@@ -23,6 +23,8 @@ import p15 from "./images/p15.jpg";
 import p16 from "./images/p16.jpg";
 import p17 from "./images/p17.jpg"
 import p18 from "./images/p18.jpg";
+import footer from "./images/footer.png";
+import navlogo from "./images/navlogo.png";
 
 // Video
 import video from "./images/video1.mp4";
@@ -117,8 +119,14 @@ const scrollRef = useRef(null);
         <header className="glass-header">
           <div className="header-container">
             <div className="logo">
-              DAR<span className="logo-bracket">|</span>
-              <span className="logo-symbol">✦</span>
+              {/* DAR<span className="logo-bracket">|</span>
+              <span className="logo-symbol">✦</span> */}
+
+ <img 
+      className="navlogo"  src={navlogo} 
+        alt="dar logo" 
+      />
+
             </div>
 
             <nav>
@@ -179,7 +187,7 @@ const scrollRef = useRef(null);
         {/* HERO */}
         <section className="hero">
           <div className="trust-badge">
-            <FontAwesomeIcon icon={faStar} />
+            <FontAwesomeIcon icon={faStar} className="star-icon"/>
             1200+ trusted customers
           </div>
 
@@ -216,9 +224,9 @@ const scrollRef = useRef(null);
 
       <div className="space-section">
         <div className="space-actions">
-          <button className="action-btn"><span className="icon">👤</span>Book DAR Crew</button>
-          <button className="action-btn"><span className="icon">📏</span>Book Measurements</button>
-          <button className="action-btn"><span className="icon">📦</span>Track Your Order</button>
+          <button className="action-btn"><span className="icon-circle">👤</span>Book DAR Crew</button>
+          <button className="action-btn"><span className="icon-circle">📏</span>Book Measurements</button>
+          <button className="action-btn"><span className="icon-circle">📦</span>Track Your Order</button>
         </div>
         <div className="space-banner">
           <div className="space-text">
@@ -243,20 +251,27 @@ const scrollRef = useRef(null);
         </div>
 
         <div className="journey-content">
-          <div className="timeline">
-            <div className="timeline-item">
-              <h3>2020 - Innovation Born</h3>
-              <p>Remote interior solutions during COVID.</p>
-            </div>
-            <div className="timeline-item">
-              <h3>2021 - Team Growth</h3>
-              <p>Expanded designers & engineers.</p>
-            </div>
-            <div className="timeline-item">
-              <h3>2022 - Omaksan Partnership</h3>
-              <p>Enhanced technology & delivery.</p>
-            </div>
-          </div>
+       <div className="timeline">
+
+  <div className="timeline-item">
+    <div className="dot"></div>
+    <h3>2020 - Innovation Born</h3>
+    <p>Remote interior solutions during COVID.</p>
+  </div>
+
+  <div className="timeline-item">
+    <div className="dot"></div>
+    <h3>2021 - Team Growth</h3>
+    <p>Expanded designers & engineers.</p>
+  </div>
+
+  <div className="timeline-item">
+    <div className="dot"></div>
+    <h3>2022 - Omaksan Partnership</h3>
+    <p>Enhanced technology & delivery.</p>
+  </div>
+
+</div>
 
           <div className="journey-image">
             <img src={p5} alt="Journey" />
@@ -674,7 +689,7 @@ const scrollRef = useRef(null);
 <footer className="footer">
       <div className="footer-top">
         <div className="footer-left">
-          <img src={logo} alt="DAR Logo" className="footer-logo"/>
+          <img src={footer} alt="DAR Logo" className="footer-logo"/>
           <p>support@dar.com</p>
           <p>+965 1234 6584</p>
           <p>+92 1234 5678</p>
