@@ -1,3 +1,4 @@
+
 .glass-header {
     padding: 20px 40px;
     margin: 50px 60px 0;
@@ -119,6 +120,12 @@ nav ul li a:hover {
 
 .auth-link:hover {
     color: #ffffff;
+}
+
+.auth-a {
+    color: #e0e0e0;
+    font-weight: 500;
+    text-decoration: none;
 }
 
 /* ===============================

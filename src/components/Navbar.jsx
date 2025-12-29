@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 import navlogo from "./images/navlogo.png";
-
+import Login from './login';
 export default function Navbar() {
     const [language, setLanguage] = useState("English");
     const [open, setOpen] = useState(false);
-    
+
     return (
         <>
 
@@ -67,9 +67,9 @@ export default function Navbar() {
 
                         <span className="separator">|</span>
 
-                        <Link to="#" className="auth-link">
-                            Login / Sign Up
-                        </Link>
+                        <div  className="auth-link">
+                         <a href="/login" className='auth-a'>Login / Sign Up</a>
+                        </div>
 
                         <Link to="#" className="btn-platform">
                             Go to DAR Platform <span className="arrow">↗</span>
